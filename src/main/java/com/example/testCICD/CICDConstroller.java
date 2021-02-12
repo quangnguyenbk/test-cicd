@@ -11,7 +11,7 @@ public class CICDConstroller {
 
     @GetMapping("/test")
     public ResponseEntity test(){
-        ResponseEntity responseEntity = new ResponseEntity("12345", HttpStatus.OK);
+        ResponseEntity responseEntity = new ResponseEntity("123456", HttpStatus.OK);
         return responseEntity;
     }
 
