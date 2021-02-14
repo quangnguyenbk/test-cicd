@@ -1,2 +1,2 @@
-FROM maven:3-alpine
+FROM scratch
 COPY . /app
