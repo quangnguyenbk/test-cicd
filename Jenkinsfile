@@ -15,7 +15,8 @@ pipeline {
         }
         stage('Deploy') { 
             steps { 
-                docker build -t test1 -f Dockerfile
+                sh 'docker build -t test1 -f Dockerfile'
+                sh 'docker run -d -p 9092:9092 test1'
             }
         }
     }
