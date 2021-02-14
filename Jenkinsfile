@@ -17,6 +17,7 @@ pipeline {
             steps { 
                 sh 'docker build -t test1 .'
                 sh 'docker run -d -p 9092:9092 test1'
+                sh 'sleep 10000'
             }
         }
     }
