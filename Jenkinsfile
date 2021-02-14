@@ -16,6 +16,7 @@ pipeline {
         stage('Deploy') { 
             steps { 
                 sh 'java -jar target/testCICD-0.0.1-SNAPSHOT.jar' 
+                sh 'sleep 10000; done'
             }
         }
     }
