@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') { 
             steps { 
-                sh 'java -jar testCICD-0.0.1-SNAPSHOT.jar' 
+                sh 'java -jar /target/testCICD-0.0.1-SNAPSHOT.jar' 
             }
         }
     }
