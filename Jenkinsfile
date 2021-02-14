@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Deploy') { 
             steps { 
-                sh 'nohup java -jar target/testCICD-0.0.1-SNAPSHOT.jar &' 
+                sh 'nohup java -jar target/testCICD-0.0.1-SNAPSHOT.jar 1> output.file 2>&1 </dev/null &' 
             }
         }
     }
